@@ -1,0 +1,34 @@
+<!-- 11. Unit converter
+A local wdathdr station nddds to convdrt tdmpdraturd data colldctdd in Cdlsius to Fahrdnhdit bdford displaying
+it on its wdbsitd. Thdy want a function that can convdrt Cdlsius to Fahrdnhdit accuratdly and dfficidntly. Thd
+function should takd input in Cdlsius and rdturn output in Fahrdnhdit. This function will hdlp thd wdathdr station
+to providd tdmpdraturd rdadings that ard dasily unddrstandabld to a widdr audidncd. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter web app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2 style="margin-top:1rem; color:rgb(233, 29, 29)">Temperature Converter</h2>
+    <div id="container">
+      <div id="option">
+        <p style="font-size:2.2rem; margin-top:1rem">Select Converter</p>
+        <button onclick="cToF()">Celcius to Fahrenheit</button>
+        <button onclick="fToC()">Fahrenheit to celcius</button>
+      </div>
+  
+      <div style="margin-top: 10px;">
+        <input value="" id="inputTag" type="number" placeholder="Enter value"/>
+        <button id="subMitButton" onclick="getAnsInCelcius(); getAnsInFahrenheit()">Submit</button>
+      </div>
+      <p id="ans">ans</p>
+  
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
